@@ -102,8 +102,7 @@ export const Popover: React.FC<IPopoverProps> = (props) => {
     }
   );
 
-  const mergedClassNames = cx('lc-popover', {
-    [className]: className,
+  const mergedClassNames = cx('lc-popover', className, {
     'lc-popover--visible': visible,
   });
 
